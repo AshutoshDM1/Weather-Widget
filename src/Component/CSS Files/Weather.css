@@ -1,0 +1,79 @@
+.Main-container {
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-body {
+  /* margin-top: 2vmin; */
+  height: 85vmin;
+  width: 80vmin;
+  background-color: rgb(75, 225, 255);
+  border-radius: 2vmin;
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Input-main {
+  height: 5vmin;
+  width: 70vmin;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vmin;
+  border-radius: 1vmin;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.Input-box {
+  height: 4vmin;
+  width: 65vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+  width: 65vmin;
+}
+
+.search-btn {
+  margin-left: 25vmin;
+  margin-top: 2vmin;
+  height: 6vmin;
+  width: 20vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Widget-Box {
+  margin-top: 4vmin;
+  height: 80vmin;
+  width: 70vmin;
+  background-color: rgb(184, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Image-box {
+  margin-top: 2vmin;
+  height: 30vmin;
+  width: 60vmin;
+  background-color: rgb(25, 148, 45);
+}
+
+.info-box {
+  margin-top: 1vmin;
+  height: 20vmin;
+  width: 60vmin;
+  background-color: rgb(211, 143, 40);
+}
