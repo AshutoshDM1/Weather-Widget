@@ -53,6 +53,11 @@
 
 }
 
+.search-btn-main {
+  height: 6vmin;
+  width: 20vmin;
+}
+
 .Widget-Box {
   margin-top: 4vmin;
   height: 80vmin;
@@ -69,11 +74,13 @@
   height: 30vmin;
   width: 60vmin;
   background-color: rgb(25, 148, 45);
+  /* background-image: url("./src/assets/sunny_day.jpg"); */
+  background-size: cover;
 }
 
 .info-box {
   margin-top: 1vmin;
   height: 20vmin;
   width: 60vmin;
-  background-color: rgb(211, 143, 40);
+  background-color: rgb(255, 219, 165);
 }
