@@ -1,6 +1,6 @@
 .Main-container {
   height: 90vh;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   /* margin-top: 2vmin; */
   height: 85vmin;
   width: 80vmin;
-  background-color: rgb(75, 225, 255);
+  background-color: rgb(19, 157, 255);
   border-radius: 2vmin;
   padding: 5vmin;
   display: flex;
@@ -43,44 +43,62 @@
 }
 
 .search-btn {
-  margin-left: 25vmin;
+  margin-left: 28vmin;
   margin-top: 2vmin;
   height: 6vmin;
-  width: 20vmin;
+  width: 15vmin;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
+  border-radius: 1vmin;
+  padding: 1vmin;
 
 }
 
 .search-btn-main {
-  height: 6vmin;
-  width: 20vmin;
+  width: 15vmin;
+  background-color: aliceblue;
 }
+
 
 .Widget-Box {
   margin-top: 4vmin;
   height: 80vmin;
   width: 70vmin;
-  background-color: rgb(184, 255, 255);
+  background-color: rgb(0, 111, 208);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 3vmin;
 }
 
 .Image-box {
   margin-top: 2vmin;
-  height: 30vmin;
-  width: 60vmin;
-  background-color: rgb(25, 148, 45);
+  height: 8vmin;
+  width: 8vmin;
+  /* background-color: rgb(0, 93, 214); */
   /* background-image: url("./src/assets/sunny_day.jpg"); */
   background-size: cover;
+  border-radius: 50%;
 }
 
 .info-box {
   margin-top: 1vmin;
-  height: 20vmin;
+  height: 30vmin;
   width: 60vmin;
-  background-color: rgb(255, 219, 165);
+  /* background-color: rgb(0, 149, 255); */
+}
+
+.indo-main {
+  height: 25vmin;
+  width: 40vmin;
+  margin: 3vmin;
+  color: white;
+  font-size: 2.5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: rgb(0, 13, 255); */
 }

@@ -1,48 +1,48 @@
 import "./CSS Files/Weather.css"
 import Widget_Api from "./Widget"
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import {GetWeatherData} from './Weather_api'
-
+import { GetWeatherData } from './Weather_api'
+// import { GetWeatherCondition } from './Image_box_Api'
 import { useState } from "react";
+import SearchWeather from "./SearchWeather";
+
 
 export default function Weather() {
-  const [city, setCity] = useState("");
-  let finalCity="New Delhi";
+  // let displayError;
+  // let ShowHelper = "";
 
-  const handleInput = (event) => {
-    setCity(event.target.value);
-    finalCity = city;
+  let WeatherData = {
+    YouSearch : "Pune",
+    condition_icon: "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    condition_text: "Sunny",
+    country: "India",
+    feelslike_c: 32.4,
+    gust_kph: 12.4,
+    humidity: 16,
+    last_updated: "2024-03-18 13:30",
+    localtime: "2024-03-18 13:34",
+    region: "Maharashtra",
+    temp_c: 34.4,
+    wind_kph: 10.8,
+  };
 
-  };
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      handleSubmit();
-    }
-  };
-  const handleSubmit = () => {
-    console.log(finalCity);
-    setCity("");
-    GetWeatherData(finalCity);
-  };
+  let [currentWeatherData, setCurrentWeather] = useState(WeatherData);
 
+  let setData = (infoWeatherData) => {
+    setCurrentWeather(infoWeatherData);
+  }
 
   return (
     <>
       <div className="Main-container">
         <div className="Main-body">
-          <div className="Input-main">
-            <div className="Input-box">
-              <TextField onChange={handleInput}
-                value={city} onKeyPress={handleKeyPress} className="Input" id="outlined-basic" label="Enter City Name" variant="outlined" />
-            </div>
-          </div>
-          <div className="search-btn">
-            <Button className="search-btn-main" variant="contained" onClick={handleSubmit}>Search</Button>
-          </div>
-          <Widget_Api city = {finalCity}/>
+          <SearchWeather 
+          setData={setData} 
+          // handleErrorMessage={handleErrorMessage}
+          // displayError={displayError}
+          // ShowHelper={ShowHelper}
+          />
+          <Widget_Api currentWeatherData={currentWeatherData} />
         </div>
-
       </div>
     </>
   )

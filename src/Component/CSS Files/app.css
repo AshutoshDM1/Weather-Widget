@@ -3,3 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.page {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./src/assets/sunset_BG.avif");
+  /* background-blend-mode: color; */
+  background-size: cover;
+}
+
+/* .like {
+  height: 100vh;
+} */

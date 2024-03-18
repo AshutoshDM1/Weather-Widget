@@ -6,8 +6,11 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Weather></Weather>
+      <div className="page">
+        <Header />
+        <Weather></Weather>
+        <div className="like"></div>
+      </div>
     </>
   )
 }
