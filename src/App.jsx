@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className="page">
+      <div className="page" style={{ backgroundImage: `url("./src/assets/sunset_BG.jpg")` }}>
         <Header />
         <Weather></Weather>
         <div className="like"></div>
