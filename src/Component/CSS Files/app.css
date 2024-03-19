@@ -6,7 +6,7 @@
 
 .page {
   background-color: rgb(255, 255, 255);
-  background-image: url("./src/assets/sunset_BG.avif");
+  background-image: url("./src/assets/sunset_BG.jpg");
   /* background-blend-mode: color; */
   background-size: cover;
 }
