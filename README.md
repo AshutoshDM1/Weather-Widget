@@ -6,4 +6,6 @@ This is a simple weather widget Website for your desktop. It uses the Weather AP
 
 # Thanks To 
 <br>
+
+
 <img src= "./public/weatherapi_logo.webp">
