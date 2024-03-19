@@ -1,17 +1,13 @@
 import "./CSS Files/Weather.css"
 import Widget_Api from "./Widget"
-import { GetWeatherData } from './Weather_api'
-// import { GetWeatherCondition } from './Image_box_Api'
 import { useState } from "react";
 import SearchWeather from "./SearchWeather";
 
 
 export default function Weather() {
-  // let displayError;
-  // let ShowHelper = "";
 
   let WeatherData = {
-    YouSearch : "Pune",
+    YouSearch: "Pune",
     condition_icon: "//cdn.weatherapi.com/weather/64x64/day/113.png",
     condition_text: "Sunny",
     country: "India",
@@ -26,8 +22,23 @@ export default function Weather() {
   };
 
   let [currentWeatherData, setCurrentWeather] = useState(WeatherData);
+  let [showError, setShowError] = useState({
+    displayError : false ,
+    ShowHelper :  ""
+  });
 
+  let handleErrorMessage = () => {
+    console.log("error message clicked");
+    setShowError({
+      displayError : true ,
+      ShowHelper :  "Please Enter a Valid City Name! with Correct Spelling ."
+    })
+  }
   let setData = (infoWeatherData) => {
+    setShowError({
+      displayError : false ,
+      ShowHelper :  ""
+    })
     setCurrentWeather(infoWeatherData);
   }
 
@@ -35,11 +46,10 @@ export default function Weather() {
     <>
       <div className="Main-container">
         <div className="Main-body">
-          <SearchWeather 
-          setData={setData} 
-          // handleErrorMessage={handleErrorMessage}
-          // displayError={displayError}
-          // ShowHelper={ShowHelper}
+          <SearchWeather
+            setData={setData}
+          handleErrorMessage={handleErrorMessage}
+          showError={showError}
           />
           <Widget_Api currentWeatherData={currentWeatherData} />
         </div>

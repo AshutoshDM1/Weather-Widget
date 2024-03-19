@@ -19,16 +19,6 @@ let GetWeatherData = async (city) => {
     region: data.location.region,
     localtime: data.location.localtime,
   }
-  // console.log(infoWeatherData);
-}
-
-let displayError = true;
-let ShowHelper = "Incorrect entry.  Please try with Correct Spelling";
-
-let handleErrorMessage = () => {
- console.log("its claa")
-  displayError = true;
-  ShowHelper = "Incorrect entry.  Please try with Correct Spelling";
 }
 
 export { GetWeatherData, infoWeatherData };
